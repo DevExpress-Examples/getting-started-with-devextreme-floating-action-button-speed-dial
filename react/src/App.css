@@ -1,0 +1,12 @@
+.dx-fa-button-icon, .dx-fa-button-icon-close {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+#app-container {
+  height: 360px;
+  width: 320px;
+}
