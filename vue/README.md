@@ -1,7 +1,6 @@
-# Getting Started with DevExtreme Vue Floating Action Button - Multiple Actions (Speed Dial)
+# DevExtreme Vue Floating Action Button Multiple Actions - Getting Started 
 
-This repository stores Vue source code for the following tutorial: [Getting Started with Floating Action Button - Multiple Actions (Speed Dial)](https://js.devexpress.com/Documentation/Guide/UI_Components/Floating_Action_Button/Getting_Started_with_Floating_Action_Button/#Multiple_Actions_Speed_Dial).
-
+This repository stores the code examples of the Vue Floating Action Button component for the [Getting Started with Floating Action Button - Multiple Actions](https://js.devexpress.com/Documentation/Guide/UI_Components/Floating_Action_Button/Getting_Started_with_Floating_Action_Button/#Multiple_Actions_Speed_Dial) tutorial. The FAB allows users open a menu with several related actions (speed dial).
 
 ## Project setup
 ```
