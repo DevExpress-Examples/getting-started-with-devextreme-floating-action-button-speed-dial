@@ -23,7 +23,7 @@ This repository stores the code examples of the Floating Action Button component
 
 ## Documentation
 
-- [Getting Started with Floating Action Button - Single Action](https://js.devexpress.com/Documentation/Guide/UI_Components/Floating_Action_Button/Getting_Started_with_Floating_Action_Button/#Multiple_Actions_Speed_Dial)
+- [Getting Started with Floating Action Button - Multiple Actions](https://js.devexpress.com/Documentation/Guide/UI_Components/Floating_Action_Button/Getting_Started_with_Floating_Action_Button/#Multiple_Actions_Speed_Dial)
 
 - [Floating Action Button - API Reference](https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxSpeedDialAction/)
 
