@@ -1,0 +1,18 @@
+<div id="app-container">
+    <p>View's content</p>
+    <dx-speed-dial-action
+        hint="Copy to clipboard"
+        icon="icon ion-md-copy"
+        (onClick)="showNotification('Copied to clipboard')">
+    </dx-speed-dial-action>
+    <dx-speed-dial-action
+        hint="Send by email"
+        icon="icon ion-md-mail"
+        (onClick)="showNotification('Sent by email')">
+    </dx-speed-dial-action>
+    <dx-speed-dial-action
+        hint="Share on Facebook"
+        icon="icon ion-logo-facebook"
+        (onClick)="showNotification('Shared on Facebook')">
+    </dx-speed-dial-action>
+</div>
