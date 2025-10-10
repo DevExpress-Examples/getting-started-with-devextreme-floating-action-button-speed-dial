@@ -1,3 +1,24 @@
-<div class="default-style">
-  <dx-button [text]="buttonText" (onClick)="onClick($event)"></dx-button>
+<div id="app-container">
+  <p>View's content</p>
+
+  <dx-speed-dial-action
+    hint="Copy to clipboard"
+    icon="copy"
+    (onClick)="showNotification('Copied to clipboard')"
+  >
+  </dx-speed-dial-action>
+
+  <dx-speed-dial-action
+    hint="Send by email"
+    icon="email"
+    (onClick)="showNotification('Sent by email')"
+  >
+  </dx-speed-dial-action>
+
+  <dx-speed-dial-action
+    hint="Share on Facebook"
+    icon="like"
+    (onClick)="showNotification('Shared on Facebook')"
+  >
+  </dx-speed-dial-action>
 </div>

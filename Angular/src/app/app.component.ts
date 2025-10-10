@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { ClickEvent } from 'devextreme/ui/button';
+import notify from 'devextreme/ui/notify';
+import config from 'devextreme/core/config';
+import { FloatingActionButtonConfig, NotificationOptions } from './app.types';
 
 @Component({
   selector: 'app-root',
@@ -7,14 +9,35 @@ import { ClickEvent } from 'devextreme/ui/button';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'Angular';
+  constructor() {
+    const fabConfig: FloatingActionButtonConfig = {
+      icon: 'add',
+      position: {
+        my: 'right bottom',
+        at: 'right bottom',
+        of: '#app-container',
+        offset: '-16 -16',
+      },
+    };
 
-  counter = 0;
+    config({
+      floatingActionButtonConfig: fabConfig,
+    });
+  }
 
-  buttonText = 'Click count: 0';
+  showNotification(message: string): void {
+    const notificationOptions: NotificationOptions = {
+      message,
+      position: {
+        my: 'left bottom',
+        at: 'left bottom',
+        of: '#app-container',
+        offset: '16 -16',
+      },
+      minWidth: null,
+      width: 320 * 0.7,
+    };
 
-  onClick(e: ClickEvent): void {
-    this.counter++;
-    this.buttonText = `Click count: ${this.counter}`;
+    notify(notificationOptions, 'info', 1000);
   }
 }

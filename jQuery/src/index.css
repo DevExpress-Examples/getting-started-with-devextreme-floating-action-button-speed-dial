@@ -1,4 +1,17 @@
-.demo-container {
-    margin: 50px;
-    width: 90vw;
+.dx-fa-button-icon,
+.dx-fa-button-icon-close {
+  text-align: center;
+}
+
+#app-container {
+  height: 360px;
+  width: 320px;
+  position: relative;
+  margin: 50px;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+p {
+  text-align: center;
 }
