@@ -3,15 +3,13 @@
   text-align: center;
 }
 
-p {
-  text-align: center;
-}
-
 #app-container {
   height: 360px;
   width: 320px;
-  position: relative;
-  margin: 50px;
-  padding: 20px;
-  border: 1px solid #ddd;
+  border: 1px solid rgb(221 221 221);
+}
+
+p {
+  font-size: 14px;
+  text-align: center;
 }

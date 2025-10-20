@@ -1,7 +1,7 @@
 $(() => {
   DevExpress.config({
     floatingActionButtonConfig: {
-      icon: 'add',
+      icon: 'share',
       position: {
         my: 'right bottom',
         at: 'right bottom',
@@ -27,11 +27,11 @@ $(() => {
     },
   });
 
-  $('#action-facebook').dxSpeedDialAction({
-    hint: 'Share on Facebook',
-    icon: 'like',
+  $('#action-social').dxSpeedDialAction({
+    hint: 'Share on Social Media',
+    icon: 'link',
     onClick() {
-      showNotification('Shared on Facebook');
+      showNotification('Shared on Social Media');
     },
   });
 
@@ -45,7 +45,9 @@ $(() => {
         offset: '16 -16',
       },
       minWidth: null,
-      width: () => $('#app-container').width() * 0.7,
+      width() {
+        return $('#app-container').width() * 0.7;
+      },
     }, 'info', 1000);
   }
 });

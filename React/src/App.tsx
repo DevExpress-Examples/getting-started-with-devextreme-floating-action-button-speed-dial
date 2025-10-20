@@ -9,7 +9,7 @@ import notify from 'devextreme/ui/notify';
 // Configure the floating action button
 config({
   floatingActionButtonConfig: {
-    icon: 'add',
+    icon: 'share',
     position: {
       of: '#app-container',
       my: 'right bottom',
@@ -54,10 +54,10 @@ function App(): JSX.Element {
     [showNotification],
   );
 
-  const handleFacebookClick = useCallback(
+  const handleSocialClick = useCallback(
     (e: SpeedDialActionTypes.ClickEvent) => {
       e.component.option('hint');
-      showNotification('Shared on Facebook');
+      showNotification('Shared on Social Media');
     },
     [showNotification],
   );
@@ -79,9 +79,9 @@ function App(): JSX.Element {
       />
 
       <SpeedDialAction
-        hint="Share on Facebook"
-        icon="like"
-        onClick={handleFacebookClick}
+        hint="Share on Social Media"
+        icon="link"
+        onClick={handleSocialClick}
       />
     </div>
   );

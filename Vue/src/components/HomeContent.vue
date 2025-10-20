@@ -1,13 +1,12 @@
 <script setup lang="ts">
 import DxSpeedDialAction from 'devextreme-vue/speed-dial-action';
-import type { DxSpeedDialActionTypes } from 'devextreme-vue/speed-dial-action';
 import config from 'devextreme/core/config';
 import notify from 'devextreme/ui/notify';
 import type { FloatingActionButtonConfig, NotificationOptions } from '../types';
 
 // Configure the floating action button
 const fabConfig: FloatingActionButtonConfig = {
-  icon: 'add',
+  icon: 'share',
   position: {
     my: 'right bottom',
     at: 'right bottom',
@@ -36,19 +35,16 @@ const showNotification = (message: string): void => {
   notify(notificationOptions, 'info', 1000);
 };
 
-const handleCopyClick = (e: DxSpeedDialActionTypes.ClickEvent): void => {
-  const hint = e.component.option('hint');
-  showNotification(`${hint}: Copied to clipboard`);
+const handleCopyClick = (): void => {
+  showNotification('Copied to clipboard');
 };
 
-const handleEmailClick = (e: DxSpeedDialActionTypes.ClickEvent): void => {
-  const hint = e.component.option('hint');
-  showNotification(`${hint}: Sent by email`);
+const handleEmailClick = (): void => {
+  showNotification('Sent by email');
 };
 
-const handleFacebookClick = (e: DxSpeedDialActionTypes.ClickEvent): void => {
-  const hint = e.component.option('hint');
-  showNotification(`${hint}: Shared on Facebook`);
+const handleSocialClick = (): void => {
+  showNotification('Shared on Social Media');
 };
 </script>
 
@@ -69,9 +65,9 @@ const handleFacebookClick = (e: DxSpeedDialActionTypes.ClickEvent): void => {
     />
 
     <DxSpeedDialAction
-      hint="Share on Facebook"
-      icon="like"
-      @click="handleFacebookClick"
+      hint="Share on Social Media"
+      icon="link"
+      @click="handleSocialClick"
     />
   </div>
 </template>
@@ -80,13 +76,11 @@ const handleFacebookClick = (e: DxSpeedDialActionTypes.ClickEvent): void => {
 #app-container {
   height: 360px;
   width: 320px;
-  position: relative;
-  margin: 50px;
-  padding: 20px;
-  border: 1px solid #ddd;
+  border: 1px solid rgb(221 221 221);
 }
 
 p {
+  font-size: 14px;
   text-align: center;
 }
 </style>

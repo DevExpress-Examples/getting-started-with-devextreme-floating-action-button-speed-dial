@@ -11,7 +11,7 @@ import { FloatingActionButtonConfig, NotificationOptions } from './app.types';
 export class AppComponent {
   constructor() {
     const fabConfig: FloatingActionButtonConfig = {
-      icon: 'add',
+      icon: 'share',
       position: {
         my: 'right bottom',
         at: 'right bottom',
