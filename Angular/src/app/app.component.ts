@@ -3,11 +3,13 @@ import notify from 'devextreme/ui/notify';
 import config from 'devextreme/core/config';
 import { FloatingActionButtonConfig, NotificationOptions } from './app.types';
 
+import { DxSpeedDialActionModule } from 'devextreme-angular/ui/speed-dial-action';
+
 @Component({
     selector: 'app-root',
+    imports: [DxSpeedDialActionModule],
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss'],
-    standalone: false
 })
 export class AppComponent {
   constructor() {
